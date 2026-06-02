@@ -1,35 +1,56 @@
 # Influencer Website - Interactive Media Kit
 
-An immersive, conversion-focused creator portfolio website built with React, TanStack Start, and Vite.
+<p align="center">
+  <b>A premium, conversion-focused creator portfolio experience</b><br/>
+  Built with React, TanStack Start, Vite, and Tailwind CSS.
+</p>
 
-This project presents a premium brand-partnership experience for **Aria Kessler** with animated storytelling, campaign proof points, interactive case studies, and a high-intent inquiry flow.
+<p align="center">
+  <a href="http://localhost:8080"><img alt="Local Live Link" src="https://img.shields.io/badge/Live-Localhost_8080-8b5cf6?style=for-the-badge"></a>
+  <a href="https://github.com/RyugaxEren/Influencer-Website"><img alt="Repository" src="https://img.shields.io/badge/GitHub-Repository-111827?style=for-the-badge&logo=github"></a>
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-7.x-646CFF?style=for-the-badge&logo=vite">
+  <img alt="React" src="https://img.shields.io/badge/React-19.x-149ECA?style=for-the-badge&logo=react">
+</p>
 
-## Live Experience Highlights
+---
 
-- Magnetic CTA buttons, custom cursor, page loader, scroll progress, and reveal animations.
-- Interactive campaign gallery and lightbox-based case-study browsing.
-- Brand-fit quiz and inquiry form flow designed to increase qualified outreach.
-- Dedicated `/work` archive page with category filtering and campaign metrics.
-- SEO-ready page metadata for homepage and work pages.
+## Live Links
 
-## Core Sections (Homepage)
+- **Local:** [http://localhost:8080](http://localhost:8080)
+- **Repository:** [RyugaxEren/Influencer-Website](https://github.com/RyugaxEren/Influencer-Website)
+- **Production:** Add your deployed URL here after deploy (Vercel/Netlify/Cloudflare Pages)
 
-- Hero and creator positioning
-- About and press strip
-- Stats and platform breakdown
-- Showcase and live feed
-- Demographics and brand proof
-- Results ticker and package options
-- Brand quiz, availability, testimonials, final CTA, and footer
+## Overview
+
+This project presents a cinematic brand-partnership website for **Aria Kessler**, designed to feel editorial while still driving qualified leads.  
+It combines smooth micro-interactions, social proof, and clear conversion paths to make the site feel both premium and high-performing.
+
+## Why This Website Feels Engaging
+
+- Interactive scroll experience with custom cursor, progress bar, reveal animations, and atmospheric overlays.
+- High-intent CTA flow with sticky booking bar and multi-step inquiry journey.
+- Case-study storytelling with rich campaign cards and lightbox detail views.
+- Social-proof architecture through stats, testimonials, press strip, and results ticker.
+- Distinct pages for homepage narrative (`/`) and full campaign archive (`/work`).
+
+## Homepage Experience Map
+
+1. Hero + positioning
+2. About + press strip
+3. Stats + platforms
+4. Showcase + live feed
+5. Demographics + brands
+6. Results ticker + packages
+7. Quiz + availability + testimonials
+8. Final CTA + upgraded footer
 
 ## Tech Stack
 
-- **Framework:** React 19 + TanStack Start + TanStack Router
-- **Build tool:** Vite 7
+- **Framework:** React 19, TanStack Start, TanStack Router
+- **Build:** Vite 7
 - **Styling:** Tailwind CSS 4
-- **UI primitives:** Radix UI
-- **Forms/validation:** React Hook Form + Zod
-- **Icons:** Lucide React
+- **UI:** Radix UI + custom motion components
+- **Forms:** React Hook Form + Zod
 - **Language:** TypeScript
 
 ## Project Structure
@@ -39,62 +60,41 @@ src/
   assets/                   # Campaign and profile images
   components/
     fx/                     # Motion/interaction components
-    portfolio/              # Page sections and portfolio widgets
+    portfolio/              # Portfolio sections and feature blocks
     ui/                     # Shared UI primitives
-  hooks/                    # Reusable custom hooks
-  lib/                      # Shared app utilities and data
+  hooks/                    # Reusable hooks
+  lib/                      # Shared data and utilities
   routes/                   # File-based routes (/ and /work)
-  styles.css                # Global theme and tokens
+  styles.css                # Theme tokens and global styles
 ```
 
-## Getting Started
-
-### 1) Install dependencies
+## Quick Start
 
 ```bash
 npm install
-```
-
-### 2) Run development server
-
-```bash
 npm run dev
 ```
 
-Open `http://localhost:8080`.
+Then open [http://localhost:8080](http://localhost:8080).
 
-### 3) Build for production
+## Available Scripts
 
-```bash
-npm run build
-```
-
-### 4) Preview production build
-
-```bash
-npm run preview
-```
-
-## Customization Guide
-
-To adapt this template for your own brand/creator:
-
-- Update SEO metadata in `src/routes/index.tsx` and `src/routes/work.tsx`.
-- Replace campaign data in `src/lib/work-data.ts`.
-- Update sections inside `src/components/portfolio/`.
-- Replace image assets under `src/assets/`.
-- Adjust theme tokens and global styles in `src/styles.css`.
-
-## Scripts
-
-- `npm run dev` - start local development server
-- `npm run build` - production build
-- `npm run build:dev` - development-mode build
-- `npm run preview` - preview build output
+- `npm run dev` - start development server
+- `npm run build` - create production build
+- `npm run build:dev` - build in development mode
+- `npm run preview` - preview production build
 - `npm run lint` - run ESLint
-- `npm run format` - run Prettier formatting
+- `npm run format` - run Prettier
+
+## Customize for Your Brand
+
+- Edit metadata in `src/routes/index.tsx` and `src/routes/work.tsx`.
+- Update campaign data in `src/lib/work-data.ts`.
+- Replace section copy/components in `src/components/portfolio/`.
+- Replace media assets in `src/assets/`.
+- Tune colors and typography in `src/styles.css`.
 
 ## Notes
 
-- This repository is now configured without Lovable runtime tagging/watermark injection.
-- The `.lovable` planning artifacts are optional and can be removed for a cleaner public repository.
+- Lovable watermark injection has been removed from runtime configuration.
+- `.lovable/` artifacts are ignored for cleaner public commits.
